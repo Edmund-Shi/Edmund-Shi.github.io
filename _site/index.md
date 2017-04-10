@@ -27,7 +27,14 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
+### Contents
+<ul>
+  {% for post in site.posts %}
+    <li>
+	<a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Edmund-Shi/Edmund-Shi.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
